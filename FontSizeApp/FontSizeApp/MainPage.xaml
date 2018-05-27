@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage Padding="20" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FontSizeApp"
              x:Class="FontSizeApp.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    Android="0,20,0,0"
+                    iOS="0,20,0,0"/>
+    </ContentPage.Padding>
+    <StackLayout >
+        <Button Text="Next" Clicked="Button_Clicked"/>
+        <Label Text="{Binding Source={x:Reference slider},Path=Value, StringFormat= 'Font Size: {0:N0}'}" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+           HorizontalOptions="Center"/>
+        <Slider x:Name="slider" Maximum="50" Minimum="16"/>
+        <Label x:Name="currentQuote" FontSize="{Binding Source= {x:Reference slider}, Path=Value}"/>
+    </StackLayout>
 </ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="#127ac7" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FontSizeApp.StackExercise">
+    <StackLayout VerticalOptions="Center">
+        <StackLayout  >
+            <Label Text="Welcome to Xamarin" FontSize="30" FontAttributes="Bold"  TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Cross-Platform apps made easy" FontSize="18" TextColor="White" HorizontalOptions="Center"/>
+            <Button Text="Login" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#1dabf0"/>
+            <Button Text="Register" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#1dabf0"/>
+            <!--Login PAGE!!!-->
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
