@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace FontSizeApp
 {
@@ -13,7 +7,7 @@ namespace FontSizeApp
 		public App ()
 		{
 			InitializeComponent();
-			MainPage = new StackImage();
+            MainPage = new RelativeLayoutPating();
 		}
 
 
