@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 
+
 namespace FontSizeApp
 {
 	public partial class App : Application
@@ -7,7 +8,7 @@ namespace FontSizeApp
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new RelativeLayoutPating();
+            MainPage = new ContactList();
 		}
 
 

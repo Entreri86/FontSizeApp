@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FontSizeApp.ContactList">
+    <ListView x:Name="ContactListView" HasUnevenRows="True">
+        <!--
+        <ListView.ItemTemplate>
+            <DataTemplate >
+                 <ImageCell TextColor="Black" Text="{Binding Name}" Detail="{Binding Status}" DetailColor="Blue" ImageSource="{Binding ImageUrl}"/> 
+                <ViewCell >
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="5">
+                        <Image Source="{Binding ImageUrl}"/>
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="{Binding Name}" FontSize="12"/>
+                            <Label Text="{Binding Status}" FontSize="12" TextColor="Blue"/>
+                        </StackLayout>
+                        <Button Text="Seguir" TextColor="Blue" HorizontalOptions="End" BackgroundColor="White" FontSize="12"/>
+                    </StackLayout>                    
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate> -->
+    </ListView>
+</ContentPage>

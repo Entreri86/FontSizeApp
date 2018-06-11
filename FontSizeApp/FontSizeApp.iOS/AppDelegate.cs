@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using ImageCircle.Forms.Plugin.iOS;
 using UIKit;
 
 namespace FontSizeApp.iOS
@@ -24,7 +25,9 @@ namespace FontSizeApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
+            ImageCircleRenderer.Init();
+            //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
             return base.FinishedLaunching(app, options);
         }
     }

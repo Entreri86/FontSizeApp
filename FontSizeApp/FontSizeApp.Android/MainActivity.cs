@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace FontSizeApp.Droid
 {
@@ -18,8 +19,12 @@ namespace FontSizeApp.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
+            ImageCircleRenderer.Init();
+            //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
+
             LoadApplication(new App());
         }
     }

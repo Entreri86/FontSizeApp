@@ -5,6 +5,6 @@
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
-
+        <!-- xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" -->
 	</Application.Resources>
 </Application>

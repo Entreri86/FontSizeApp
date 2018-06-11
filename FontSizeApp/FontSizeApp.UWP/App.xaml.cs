@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -53,6 +54,10 @@ namespace FontSizeApp.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+
+                //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
+                ImageCircleRenderer.Init();
+                //FOB Añadido para poder utilizar el Plugin de Imagenes de Circulo
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

@@ -10,72 +10,94 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayoutPaying.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ContactList.xaml.cs">
+      <DependentUpon>ContactList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AbsoluteLayoutPaying.xaml.cs">
       <DependentUpon>AbsoluteLayoutPaying.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GridExercise.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GridExercise.xaml.cs">
       <DependentUpon>GridExercise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GridLogin.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GridLogin.xaml.cs">
       <DependentUpon>GridLogin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)RelativeLayoutPating.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Models\ListModels\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Models\ListModels\ContactGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PhotoGallery.xaml.cs">
+      <DependentUpon>PhotoGallery.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\RelativeLayoutPating.xaml.cs">
       <DependentUpon>RelativeLayoutPating.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StackExercise.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StackExercise.xaml.cs">
       <DependentUpon>StackExercise.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StackImage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StackImage.xaml.cs">
       <DependentUpon>StackImage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StackExercise.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StackExercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StackImage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StackImage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridExercise.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridExercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridLogin.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayoutPaying.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AbsoluteLayoutPaying.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RelativeLayoutPating.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RelativeLayoutPating.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PhotoGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ContactList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
